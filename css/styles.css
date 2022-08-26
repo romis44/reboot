@@ -15,6 +15,7 @@
   /* Background colors */
 
   --accent-bg-cl: #2196f3;
+  --secondary-bg-cl: #188CE8;
   --main-bg-cl: #ffffff;
   --dark-bg-cl: #2f303a;
   --light-bg-cl: #f5f4fa;
@@ -143,11 +144,9 @@ img {
 }
 
 
-
 .header .logo-part {
   color: var(--logo-txt-cl);
 }
-
 
 
 .contacts-list .link {
@@ -194,13 +193,15 @@ img {
   font-weight: 700;
   font-size: 16px;
   line-height: calc(30 / 16);
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   color: var(--main-bg-cl);
   background-color: var(--accent-bg-cl);
   cursor: pointer;
+}
+
+.hero .hero-btn:hover,
+.hero .hero-btn:focus{
+ background-color: var(--secondary-bg-cl);
 }
 
 /* НАШІ ПЕРЕВАГИ */
@@ -246,13 +247,14 @@ gap: 30px;
 margin-bottom: 94px;
 justify-content: center;
   }
+
+
 /* НАША КОМАНДА */
 
 .section-team-title{
-  display: flex;
-  margin-top: 94px;
-  margin-bottom: 50px;
-  justify-content: center;
+  padding-top: 92px;
+  padding-bottom: 50px;
+  text-align: center;
 }
  
 .section-team {
@@ -276,11 +278,10 @@ justify-content: center;
 }
 
 .section-team-list {
-  background-color: var(--main-bg-cl);
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 
   .team-box{
@@ -337,8 +338,8 @@ justify-content: center;
   text-decoration: none;
 } 
 
-.footer.footer-link:hover,
-.footer.footer-link:focus {
+.footer .footer-link:hover,
+.footer .footer-link:focus {
   color: var(--accent-txt-cl);
 }
 
@@ -389,11 +390,11 @@ justify-content: center;
   background-color: var(--accent-bg-cl);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
   0px 2px 2px rgba(0, 0, 0, 0.12);
-border-radius: 4px;
+  border-radius: 4px;
 }
 
 .portfolio-list-caption {
-    margin-bottom: 4px;
+   margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: calc(36 / 18);
