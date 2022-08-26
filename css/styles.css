@@ -111,6 +111,7 @@ img {
   display: flex;
   gap: 50px;
   align-items: center;
+  font-weight: 500;
 }
 
 .header-item {
@@ -204,7 +205,16 @@ img {
 
 /* НАШІ ПЕРЕВАГИ */
 
+.hero-list{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
+
 .hero-caption {
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -221,6 +231,8 @@ img {
 /* НАША РОБОТА */
 
 .content-title {
+  margin-top: 47px;
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
@@ -228,13 +240,27 @@ img {
   color: var(--main-txt-cl);
 }
 
-/* КОМАНДА */
+.content-list{
+display: flex;
+gap: 30px;
+margin-bottom: 94px;
+justify-content: center;
+  }
+/* НАША КОМАНДА */
 
+.section-team-title{
+  display: flex;
+  margin-top: 94px;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+ 
 .section-team {
   background-color: var(--light-bg-cl);
 }
 
 .section-team-caption {
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: calc(19 / 16);
@@ -251,7 +277,18 @@ img {
 
 .section-team-list {
   background-color: var(--main-bg-cl);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 94px;
 }
+
+  .team-box{
+  padding: 30px 0;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  }
+
 
 /* НАШІ КОНТАКТИ */
 
@@ -300,8 +337,8 @@ img {
   text-decoration: none;
 } 
 
-.footer-link :hover,
-.footer-link :focus {
+.footer.footer-link:hover,
+.footer.footer-link:focus {
   color: var(--accent-txt-cl);
 }
 
